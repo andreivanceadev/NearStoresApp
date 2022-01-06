@@ -49,7 +49,14 @@ android {
     }
 }
 
+
+hilt {
+    enableAggregatingTask = true
+}
+
 dependencies {
+    implementation(project(":app:features:stores"))
+
     implementation(Libs.kotlin)
     implementation(Libs.androidXCore)
     implementation(Libs.material)

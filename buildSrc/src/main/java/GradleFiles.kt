@@ -4,10 +4,10 @@ object Apps {
     const val targetSdk = 31
     const val buildTools = "30.0.3"
     fun versionCode(versionName: String) = (
-        ((versionName.split('-')[0].split(".")[2].toInt()) * 1) +
-            ((versionName.split('-')[0].split(".")[1].toInt()) * 100) +
-            ((versionName.split('-')[0].split(".")[0].toInt()) * 10000)
-        )
+            ((versionName.split('-')[0].split(".")[2].toInt()) * 1) +
+                    ((versionName.split('-')[0].split(".")[1].toInt()) * 100) +
+                    ((versionName.split('-')[0].split(".")[0].toInt()) * 10000)
+            )
 }
 
 object Versions {
@@ -64,7 +64,11 @@ object Versions {
     const val kotlinCoroutine = "1.4.2"
     const val androidXCoreTesting = "2.1.0"
 
-    //protobuf converter
+    //Retrofit
+    const val retrofit = "2.9.0"
+    const val okHttp = "4.9.0"
+
+    //MVI
     const val orbitMVI = "4.2.0"
 
     const val composeActivity = "1.3.1"
@@ -99,6 +103,11 @@ object Libs {
     const val worker = "androidx.work:work-runtime-ktx:${Versions.worker}"
 
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
+
+    const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    const val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+    const val okHttp = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
+    const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
 
     const val databaseDebug = "com.amitshekhar.android:debug-db:${Versions.dbDebug}"
 

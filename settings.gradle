@@ -2,3 +2,4 @@
 rootProject.name = "NearStoresApp"
 include ':app'
 include ':app:features:stores'
+include ':app:data'

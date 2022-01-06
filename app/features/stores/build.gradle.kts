@@ -43,7 +43,14 @@ android {
     }
 }
 
+
+hilt {
+    enableAggregatingTask = true
+}
+
 dependencies {
+    implementation(project(":app:data"))
+
     implementation(Libs.kotlin)
     implementation(Libs.androidXCore)
     implementation(Libs.androidXCompat)
